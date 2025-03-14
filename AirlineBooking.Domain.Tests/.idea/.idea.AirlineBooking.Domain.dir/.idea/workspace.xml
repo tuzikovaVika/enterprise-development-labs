@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5999821e-3fbc-4459-bd19-5673bdad363b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AirlineBooking.Domain.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AirlineBooking.Domain.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/BookStore.Application.Contracts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/AirlineBooking.Application.Contracts.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Booking/BookingCreateUpdateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Booking/BookingCreateUpdateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Booking/BookingDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Booking/BookingDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Customer/CustomerCreateUpdateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Customer/CustomerCreateUpdateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Customer/CustomerDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Customer/CustomerDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Flight/FlightCreateUpdateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Flight/FlightCreateUpdateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/Flight/FlightDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/Flight/FlightDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/IAnalyticsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/IAnalyticsService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application.Contracts/ICrudService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application.Contracts/ICrudService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application/AutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application/BookStore.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application/AirlineBooking.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application/Services/BookingCrudService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application/Services/BookingCrudService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application/Services/CustomerCrudService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application/Services/CustomerCrudService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Application/Services/FlightCrudService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Application/Services/FlightCrudService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/BookStore.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/AirlineBooking.Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Controllers/AnalyticsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Controllers/AnalyticsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Controllers/BookingCrudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Controllers/BookingCrudController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Controllers/CrudControllerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Controllers/CrudControllerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Controllers/CustomerCrudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Controllers/CustomerCrudController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Controllers/FlightCrudController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Controllers/FlightCrudController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../AirlineBooking.Server/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BookStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../BookStore.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2uGTsjKzJ4oRtXFITiLQz4ltX3W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lab2",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5999821e-3fbc-4459-bd19-5673bdad363b" name="Changes" comment="" />
+      <created>1741874119778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741874119778</updated>
+      <workItem from="1741874121114" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Domain", "AirlineBooking.Domain\AirlineBooking.Domain.csproj", "{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FAFA86DB-210E-4A0C-86C1-ADE1EB853172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Domain.Tests", "AirlineBooking.Domain.Tests\AirlineBooking.Domain.Tests.csproj", "{99D96DAC-D105-43EA-859C-604ED8F31219}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+		{99D96DAC-D105-43EA-859C-604ED8F31219} = {FAFA86DB-210E-4A0C-86C1-ADE1EB853172}
+	EndGlobalSection
+EndGlobal
