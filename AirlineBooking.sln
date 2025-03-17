@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Domain", "AirlineBooking.Domain\AirlineBooking.Domain.csproj", "{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FAFA86DB-210E-4A0C-86C1-ADE1EB853172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Domain.Tests", "AirlineBooking.Domain.Tests\AirlineBooking.Domain.Tests.csproj", "{99D96DAC-D105-43EA-859C-604ED8F31219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Application.Contracts", "AirlineBooking.Application.Contracts\AirlineBooking.Application.Contracts.csproj", "{13728C72-7435-414A-A146-77557FC94178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Application", "AirlineBooking.Application\AirlineBooking.Application.csproj", "{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Server", "AirlineBooking.Server\AirlineBooking.Server.csproj", "{365F84EA-8D3E-4A10-9CDF-961592AA4180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBooking.Infrastructure.EfCore", "AirlineBooking.Infrastructure.EfCore\AirlineBooking.Infrastructure.EfCore.csproj", "{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D96DAC-D105-43EA-859C-604ED8F31219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13728C72-7435-414A-A146-77557FC94178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13728C72-7435-414A-A146-77557FC94178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13728C72-7435-414A-A146-77557FC94178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13728C72-7435-414A-A146-77557FC94178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365F84EA-8D3E-4A10-9CDF-961592AA4180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365F84EA-8D3E-4A10-9CDF-961592AA4180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365F84EA-8D3E-4A10-9CDF-961592AA4180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365F84EA-8D3E-4A10-9CDF-961592AA4180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{529C5809-7BDB-49F9-AF8A-882F8E88D7C8} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+		{99D96DAC-D105-43EA-859C-604ED8F31219} = {FAFA86DB-210E-4A0C-86C1-ADE1EB853172}
+		{13728C72-7435-414A-A146-77557FC94178} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+		{26F9C6D4-7CB1-49BD-B923-8AAC5D08491E} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+		{365F84EA-8D3E-4A10-9CDF-961592AA4180} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+		{68093F0F-AC19-47A6-8FEE-88CD1F4F24AD} = {9B10E80F-DA26-4A1C-9B5F-3CBA3AE8A4A0}
+	EndGlobalSection
+EndGlobal

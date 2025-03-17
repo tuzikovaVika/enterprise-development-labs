@@ -1,8 +1,8 @@
-﻿using AutoMapper;
-using AirlineBooking.Application.Contracts.Flight;
+﻿using AirlineBooking.Application.Contracts.Booking;
 using AirlineBooking.Application.Contracts.Customer;
-using AirlineBooking.Application.Contracts.Booking;
+using AirlineBooking.Application.Contracts.Flight;
 using AirlineBooking.Domain.Model;
+using AutoMapper;
 
 namespace AirlineBooking.Application;
 

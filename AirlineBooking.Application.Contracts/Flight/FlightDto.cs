@@ -1,7 +1,7 @@
 ﻿namespace AirlineBooking.Application.Contracts.Flight;
 
 /// <summary>
-/// Dto для просмотра сведений о рейсе
+///     Dto для просмотра сведений о рейсе
 /// </summary>
 /// <param name="Id">Идентификатор</param>
 /// <param name="FlightNumber">Номер рейса</param>

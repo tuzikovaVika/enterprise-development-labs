@@ -1,7 +1,7 @@
 ﻿namespace AirlineBooking.Application.Contracts.Customer;
 
 /// <summary>
-/// Dto для просмотра сведений о клиенте
+///     Dto для просмотра сведений о клиенте
 /// </summary>
 /// <param name="Id">Идентификатор</param>
 /// <param name="Passport">Паспортные данные</param>

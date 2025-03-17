@@ -1,7 +1,7 @@
 ﻿namespace AirlineBooking.Application.Contracts.Booking;
 
 /// <summary>
-/// Dto для создания или изменения бронирования
+///     Dto для создания или изменения бронирования
 /// </summary>
 /// <param name="CustomerId">Идентификатор клиента</param>
 /// <param name="FlightId">Идентификатор рейса</param>

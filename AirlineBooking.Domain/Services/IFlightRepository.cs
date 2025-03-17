@@ -1,9 +1,11 @@
-﻿namespace AirlineBooking.Application.Contracts;
+﻿using AirlineBooking.Domain.Model;
+
+namespace AirlineBooking.Domain.Services;
 
 /// <summary>
-///     Интерфейс для службы, выполняющей аналитические запросы согласно бизнес-логике приложения
+///     Интерфейс репозитория для работы с рейсами.
 /// </summary>
-public interface IFlightAnalyticsService
+public interface IFlightRepository : IRepository<Flight, int>
 {
     /// <summary>
     ///     Возвращает информацию о всех рейсах в виде списка строк.

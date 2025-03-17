@@ -4,16 +4,20 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>AirlineBooking.Application</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AutoMapper" Version="14.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13"/>
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AirlineBooking.Application.Contracts\AirlineBooking.Application.Contracts.csproj"/>
         <ProjectReference Include="..\AirlineBooking.Domain\AirlineBooking.Domain.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Migrations\"/>
     </ItemGroup>
 
 </Project>

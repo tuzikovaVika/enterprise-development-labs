@@ -1,7 +1,7 @@
 ﻿namespace AirlineBooking.Application.Contracts.Customer;
 
 /// <summary>
-/// Dto для создания или изменения клиента
+///     Dto для создания или изменения клиента
 /// </summary>
 /// <param name="Passport">Паспортные данные</param>
 /// <param name="FullName">ФИО клиента</param>
