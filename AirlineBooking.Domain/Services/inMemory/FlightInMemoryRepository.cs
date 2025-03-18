@@ -1,17 +1,17 @@
-﻿using AirlineBooking.Domain.Model;
-using AirlineBooking.Domain.Data;
+﻿using AirlineBooking.Domain.Data;
+using AirlineBooking.Domain.Model;
 
 namespace AirlineBooking.Domain.Services.InMemory;
 
 /// <summary>
-/// Реализация репозитория рейсов в памяти.
+///     Реализация репозитория рейсов в памяти.
 /// </summary>
 public class FlightInMemoryRepository : IFlightRepository
 {
-    private List<Flight> _flights;
+    private readonly List<Flight> _flights;
 
     /// <summary>
-    /// Инициализирует экземпляр класса и загружает данные из DataSeeder.
+    ///     Инициализирует экземпляр класса и загружает данные из DataSeeder.
     /// </summary>
     public FlightInMemoryRepository()
     {
@@ -19,7 +19,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Добавляет рейс в коллекцию.
+    ///     Добавляет рейс в коллекцию.
     /// </summary>
     /// <param name="entity">Рейс для добавления.</param>
     /// <returns>True, если добавление успешно; иначе false.</returns>
@@ -38,7 +38,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Удаляет рейс из коллекции по его ID.
+    ///     Удаляет рейс из коллекции по его ID.
     /// </summary>
     /// <param name="key">ID рейса для удаления.</param>
     /// <returns>True, если удаление успешно; иначе false.</returns>
@@ -46,9 +46,11 @@ public class FlightInMemoryRepository : IFlightRepository
     {
         try
         {
-            var flight = Get(key);
+            Flight? flight = Get(key);
             if (flight != null)
+            {
                 _flights.Remove(flight);
+            }
         }
         catch
         {
@@ -59,7 +61,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Обновляет информацию о рейсе в коллекции.
+    ///     Обновляет информацию о рейсе в коллекции.
     /// </summary>
     /// <param name="entity">Обновленный рейс.</param>
     /// <returns>True, если обновление успешно; иначе false.</returns>
@@ -79,22 +81,26 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает рейс по его ID.
+    ///     Возвращает рейс по его ID.
     /// </summary>
     /// <param name="key">ID рейса.</param>
     /// <returns>Рейс или null, если рейс не найден.</returns>
-    public Flight? Get(int key) =>
-        _flights.FirstOrDefault(item => item.Id == key);
+    public Flight? Get(int key)
+    {
+        return _flights.FirstOrDefault(item => item.Id == key);
+    }
 
     /// <summary>
-    /// Возвращает все рейсы из коллекции.
+    ///     Возвращает все рейсы из коллекции.
     /// </summary>
     /// <returns>Список всех рейсов.</returns>
-    public IList<Flight> GetAll() =>
-        _flights;
+    public IList<Flight> GetAll()
+    {
+        return _flights;
+    }
 
     /// <summary>
-    /// Возвращает информацию о всех рейсах в виде списка строк.
+    ///     Возвращает информацию о всех рейсах в виде списка строк.
     /// </summary>
     /// <returns>Список строк с деталями рейсов.</returns>
     public IList<string> GetAllFlightsInfo()
@@ -106,15 +112,17 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает список пассажиров для указанного рейса.
+    ///     Возвращает список пассажиров для указанного рейса.
     /// </summary>
     /// <param name="flightId">ID рейса.</param>
     /// <returns>Список строк с информацией о пассажирах.</returns>
     public IList<string> GetCustomersByFlight(int flightId)
     {
-        var flight = Get(flightId);
+        Flight? flight = Get(flightId);
         if (flight == null || flight.Bookings == null)
+        {
             return new List<string>();
+        }
 
         return flight.Bookings
             .Where(booking => booking.Customer != null)
@@ -126,7 +134,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает рейсы, вылетающие из указанного города в указанную дату.
+    ///     Возвращает рейсы, вылетающие из указанного города в указанную дату.
     /// </summary>
     /// <param name="departureCity">Город вылета.</param>
     /// <param name="date">Дата вылета.</param>
@@ -142,7 +150,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает топ-5 рейсов с наибольшим количеством бронирований.
+    ///     Возвращает топ-5 рейсов с наибольшим количеством бронирований.
     /// </summary>
     /// <returns>Список кортежей, содержащих номер рейса и количество бронирований.</returns>
     public IList<Tuple<string, int?>> GetTop5FlightsByBookings()
@@ -156,7 +164,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает рейсы с максимальным количеством бронирований.
+    ///     Возвращает рейсы с максимальным количеством бронирований.
     /// </summary>
     /// <returns>Список строк с информацией о рейсах и их бронированиях.</returns>
     public IList<string> GetFlightsWithMaxBookings()
@@ -174,7 +182,7 @@ public class FlightInMemoryRepository : IFlightRepository
     }
 
     /// <summary>
-    /// Возвращает статистику бронирований для рейсов, вылетающих из указанного города.
+    ///     Возвращает статистику бронирований для рейсов, вылетающих из указанного города.
     /// </summary>
     /// <param name="departureCity">Город вылета.</param>
     /// <returns>Кортеж с минимальным, средним и максимальным количеством бронирований.</returns>
@@ -186,7 +194,9 @@ public class FlightInMemoryRepository : IFlightRepository
             .ToList();
 
         if (flightsFromCity.Count == 0)
+        {
             return (0, 0, 0);
+        }
 
         var minBookings = flightsFromCity.Min();
         var maxBookings = flightsFromCity.Max();

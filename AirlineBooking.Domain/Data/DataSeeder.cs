@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using AirlineBooking.Domain.Model;
+﻿using AirlineBooking.Domain.Model;
 
 namespace AirlineBooking.Domain.Data;
 
 /// <summary>
-/// Класс для заполнения коллекций данными.
+///     Класс для заполнения коллекций данными.
 /// </summary>
 public static class DataSeeder
 {
     /// <summary>
-    /// Список рейсов.
+    ///     Список рейсов.
     /// </summary>
     public static readonly List<Flight> Flights =
     [
@@ -47,7 +45,7 @@ public static class DataSeeder
     ];
 
     /// <summary>
-    /// Список клиентов.
+    ///     Список клиентов.
     /// </summary>
     public static readonly List<Customer> Customers =
     [
@@ -82,7 +80,7 @@ public static class DataSeeder
     ];
 
     /// <summary>
-    /// Список бронирований.
+    ///     Список бронирований.
     /// </summary>
     public static readonly List<Booking> Bookings =
     [
@@ -96,22 +94,22 @@ public static class DataSeeder
     ];
 
     /// <summary>
-    /// Статический конструктор.
+    ///     Статический конструктор.
     /// </summary>
     static DataSeeder()
     {
-        foreach (var booking in Bookings)
+        foreach (Booking booking in Bookings)
         {
             booking.Flight = Flights.FirstOrDefault(f => f.Id == booking.FlightId);
             booking.Customer = Customers.FirstOrDefault(c => c.Id == booking.CustomerId);
         }
 
-        foreach (var flight in Flights)
+        foreach (Flight flight in Flights)
         {
             flight.Bookings = new List<Booking>(Bookings.Where(b => b.FlightId == flight.Id));
         }
 
-        foreach (var customer in Customers)
+        foreach (Customer customer in Customers)
         {
             customer.Bookings = new List<Booking>(Bookings.Where(b => b.CustomerId == customer.Id));
         }
