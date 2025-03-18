@@ -6,16 +6,26 @@ using Xunit;
 
 namespace AirlineBooking.Domain.Tests;
 
+/// <summary>
+///     Тесты для проверки функциональности, связанной с рейсами (Flights).
+/// </summary>
 public class FlightTests
 {
     private readonly FlightService _flightService;
 
+    /// <summary>
+    ///     Инициализирует новый экземпляр класса <see cref="FlightTests"/>.
+    ///     Создает экземпляр сервиса рейсов с использованием репозитория в памяти.
+    /// </summary>
     public FlightTests()
     {
         var repository = new FlightInMemoryRepository();
         _flightService = new FlightService(repository);
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetAllFlightsInfo возвращает корректную информацию о всех рейсах.
+    /// </summary>
     [Fact]
     public void GetAllFlightsInfo_ReturnsCorrectFlightDetails()
     {
@@ -32,6 +42,10 @@ public class FlightTests
         }
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetCustomersByFlight возвращает корректную информацию о пассажирах для заданного рейса.
+    /// </summary>
+    /// <param name="flightId">Идентификатор рейса.</param>
     [Theory]
     [InlineData(1)]
     [InlineData(2)]
@@ -57,6 +71,10 @@ public class FlightTests
         }
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetCustomersByFlight возвращает пустой список, если бронирования для рейса отсутствуют.
+    /// </summary>
+    /// <param name="flightId">Идентификатор рейса.</param>
     [Theory]
     [InlineData(999)]
     public void GetCustomersByFlight_ReturnsEmptyList_WhenNoBookingsExist(int flightId)
@@ -67,6 +85,11 @@ public class FlightTests
         Assert.Empty(result);
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetFlightsByCityAndDate возвращает корректные рейсы для указанного города и даты.
+    /// </summary>
+    /// <param name="departureCity">Город отправления.</param>
+    /// <param name="dateString">Дата и время отправления в строковом формате.</param>
     [Theory]
     [InlineData("Москва", "15.10.2023 10:00:00")]
     [InlineData("Санкт-Петербург", "15.10.2023 14:00:00")]
@@ -92,6 +115,11 @@ public class FlightTests
         }
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetFlightsByCityAndDate возвращает пустой список, если рейсы для указанного города и даты отсутствуют.
+    /// </summary>
+    /// <param name="departureCity">Город отправления.</param>
+    /// <param name="dateString">Дата и время отправления в строковом формате.</param>
     [Theory]
     [InlineData("Лондон", "15.10.2023 10:00:00")]
     public void GetFlightsByCityAndDate_ReturnsEmptyList_WhenNoFlightsExist(string departureCity, string dateString)
@@ -104,6 +132,9 @@ public class FlightTests
         Assert.Empty(result);
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetTop5FlightsByBookings возвращает топ-5 рейсов с наибольшим количеством бронирований.
+    /// </summary>
     [Fact]
     public void GetTop5FlightsByBookings_ReturnsTop5Flights()
     {
@@ -124,6 +155,9 @@ public class FlightTests
         }
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetFlightsWithMaxBookings возвращает рейсы с максимальным количеством бронирований.
+    /// </summary>
     [Fact]
     public void GetFlightsWithMaxBookings_ReturnsFlightsWithMaxBookings()
     {
@@ -149,6 +183,10 @@ public class FlightTests
         }
     }
 
+    /// <summary>
+    ///     Проверяет, что метод GetBookingStatisticsByCity возвращает корректные статистические данные по бронированиям для указанного города.
+    /// </summary>
+    /// <param name="departureCity">Город отправления.</param>
     [Theory]
     [InlineData("Москва")]
     [InlineData("Санкт-Петербург")]

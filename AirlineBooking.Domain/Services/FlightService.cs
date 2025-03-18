@@ -1,9 +1,17 @@
-﻿using AirlineBooking.Domain.Services;
+﻿namespace AirlineBooking.Domain.Services;
 
+/// <summary>
+///     Сервис для работы с рейсами (Flights).
+///     Этот класс предоставляет методы для получения информации о рейсах, пассажирах, статистике бронирований и других данных.
+/// </summary>
 public class FlightService : IFlightService
 {
     private readonly IFlightRepository _flightRepository;
 
+    /// <summary>
+    ///     Инициализирует новый экземпляр класса <see cref="FlightService"/>.
+    /// </summary>
+    /// <param name="flightRepository">Репозиторий для работы с данными о рейсах.</param>
     public FlightService(IFlightRepository flightRepository)
     {
         _flightRepository = flightRepository;
@@ -12,6 +20,7 @@ public class FlightService : IFlightService
     /// <summary>
     ///     Возвращает информацию о всех рейсах.
     /// </summary>
+    /// <returns>Список строк, содержащих информацию о каждом рейсе.</returns>
     public IList<string> GetAllFlightsInfo()
     {
         return _flightRepository.GetAllFlightsInfo();
@@ -20,6 +29,8 @@ public class FlightService : IFlightService
     /// <summary>
     ///     Возвращает список пассажиров для указанного рейса.
     /// </summary>
+    /// <param name="flightId">Идентификатор рейса.</param>
+    /// <returns>Список строк, содержащих информацию о пассажирах рейса.</returns>
     public IList<string> GetCustomersByFlight(int flightId)
     {
         return _flightRepository.GetCustomersByFlight(flightId);
@@ -28,6 +39,8 @@ public class FlightService : IFlightService
     /// <summary>
     ///     Возвращает рейсы, вылетающие из указанного города в указанную дату.
     /// </summary>
+    /// <param name="departureCity">Город отправления.</param>
+    /// <param name="date">Дата вылета.</param>
     public IList<string> GetFlightsByCityAndDate(string departureCity, DateTime date)
     {
         return _flightRepository.GetFlightsByCityAndDate(departureCity, date);
@@ -52,6 +65,7 @@ public class FlightService : IFlightService
     /// <summary>
     ///     Возвращает статистику бронирований для рейсов, вылетающих из указанного города.
     /// </summary>
+    /// <param name="departureCity">Город отправления.</param>
     public (int? Min, double? Average, int? Max) GetBookingStatisticsByCity(string departureCity)
     {
         return _flightRepository.GetBookingStatisticsByCity(departureCity);
